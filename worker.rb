@@ -1,3 +1,4 @@
+require 'uri'
 require 'redis'
 
 redis_url = ENV["REDISTOGO_URL"] || "redis://localhost:6379"
