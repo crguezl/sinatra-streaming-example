@@ -8,7 +8,13 @@ configure do
 end
 
 get '/' do
-  "<pre>curl -v https://sinatra-streaming-example.herokuapp.com/stream</pre>"
+  """
+  <a href="https://github.com/crguezl/sinatra-streaming-example">https://github.com/crguezl/sinatra-streaming-example</a>
+  <pre>
+  curl -v http://localhost:5000/stream
+  curl -v https://sinatra-streaming-example.herokuapp.com/stream
+  </pre>
+  """
 end
 
 get '/stream' do
